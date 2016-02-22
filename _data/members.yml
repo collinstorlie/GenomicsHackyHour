@@ -1,5 +1,5 @@
 - name: Anelda van der Walt
-  affiliation: Talarify
+  affiliation: Talarify/North-West University
   github: anelda
   interests:
     - Genomics
@@ -7,9 +7,16 @@
     - eResearch
     - Community building
 - name: Henriette van der Zwan
-  affiliation: North-West University
+  affiliation: Dept of Biochemistry, North-West University
   github: henriettevdz
   interests:
     - Animal genomics
     - De novo assembly
     - Genotyping
+- name: Bianca Peterson
+  affiliation: Dept of Microbiology, North-West University
+  github: BinxieVenter
+  interests:
+    - Genomics
+    - NGS data analysis
+    - Music
