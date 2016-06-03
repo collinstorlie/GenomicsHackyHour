@@ -20,3 +20,8 @@
     - Genomics
     - NGS data analysis
     - Music
+- name: Test
+  affiliation: MytestDepartment
+  github: ivdwalt
+  interests:
+    - IT
