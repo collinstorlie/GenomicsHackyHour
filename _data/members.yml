@@ -1,23 +1,8 @@
-- name: Anelda van der Walt
-  affiliation: Talarify/North-West University
-  github: anelda
+- name: Collin Storlie
+  affiliation: James Cook University eResearch Centre
+  github: collinstorlie
   interests:
-    - Genomics
-    - Computational training
+    - Ecology
+    - HPRC
     - eResearch
-    - Community building
-- name: Henriette van der Zwan
-  affiliation: Dept of Biochemistry, North-West University
-  github: henriettevdz
-  interests:
-    - Animal genomics
-    - De novo assembly
-    - Genotyping
-- name: Bianca Peterson
-  affiliation: Dept of Microbiology, North-West University
-  github: BinxieVenter
-  interests:
-    - Genomics
-    - NGS data analysis
-    - Music
-
+    - R
