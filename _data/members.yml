@@ -1,16 +1,24 @@
 - name: Collin Storlie
-  affiliation: James Cook University eResearch Centre
+  affiliation: JCU eResearch Centre
   github: collinstorlie
   interests:
     - Ecology
     - HPRC
     - eResearch
     - R
-    
-- name: Dan Baird
-  affiliation: James Cook University eResearch Centre
-  gihub: DanielBaird
+
+- name: Daniel Baird
+  affiliation: JCU eResearch Centre
+  github: DanielBaird
   interests:
-    - Computers
-    - Other Stuff
+    - User experience
+    - Data viz
+    - Web systems
+    - Javascript, CSS, Ruby, Python
+    
+- name: Steven Vandervalk
+  affiliation: JCU eResearch Centre
+  github: stevenvandervalk
+  interests:
+    - Computer things
     
