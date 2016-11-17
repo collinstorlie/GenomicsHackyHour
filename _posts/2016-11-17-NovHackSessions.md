@@ -13,8 +13,8 @@ title: November HackyHour Sessions
 
 ### WHERE?
 
-##### -*Educational Central, JCU Townsville*
-##### -*Near Miss Sushi*
+##### +*Educational Central, JCU Townsville*
+##### +*Near Miss Sushi*
 
 ### WHEN?
 
