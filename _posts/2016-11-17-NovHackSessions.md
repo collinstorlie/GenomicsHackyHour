@@ -13,7 +13,7 @@ Only two HackyHour sessions remain for 2017!
 &nbsp;&nbsp;WHERE?
 ------------------
 
-- *Educational Central, JCU Townsville*
+- *Education Central, JCU Townsville*
 - *Near Miss Sushi*
 
 &nbsp;&nbsp;WHEN?
