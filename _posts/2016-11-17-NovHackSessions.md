@@ -7,7 +7,7 @@ startTime: '14:00'
 endTime: '16:00'
 ---
 
-Only two HackyHour sessions remain for 2017!
+Only two HackyHour sessions remain for 2016!
 ============================================
 
 &nbsp;&nbsp;WHERE?
