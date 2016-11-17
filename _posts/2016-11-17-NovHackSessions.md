@@ -14,7 +14,7 @@ title: November HackyHour Sessions
 ### WHERE?
 
 ##### -*Educational Central, JCU Townsville*
- -*Near Miss Sushi*
+##### -*Near Miss Sushi*
 
 ### WHEN?
 
