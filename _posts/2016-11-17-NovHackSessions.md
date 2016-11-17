@@ -6,22 +6,22 @@ title: November HackyHour Sessions
 Only two HackyHour sessions remain for 2017!
 ============================================
 
-&nbsp;&nbsp;&nbsp;WHO ARE WE?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHO ARE WE?
 -----------------------------
 
-WHO CAN WE HELP?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHO CAN WE HELP?
 ----------------
 
-WHAT CAN WE HELP WITH?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHAT CAN WE HELP WITH?
 ----------------------
 
-WHERE?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE?
 ------
 
 - *Educational Central, JCU Townsville*
 - *Near Miss Sushi*
 
-WHEN?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHEN?
 -----
 
 - *Friday November 18th*
