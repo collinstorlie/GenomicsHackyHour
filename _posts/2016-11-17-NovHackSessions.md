@@ -6,8 +6,8 @@ title: November HackyHour Sessions
 Only two HackyHour sessions remain for 2017!
 ============================================
 
->WHO ARE WE?
-------------
+&nbsp;&nbsp;&nbsp;WHO ARE WE?
+-----------------------------
 
 WHO CAN WE HELP?
 ----------------
