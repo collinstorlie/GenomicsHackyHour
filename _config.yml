@@ -3,7 +3,7 @@ title: HackyHour @ JCU
 description: "Providing digital solutions to JCU research staff & students"
 
 titleBackground: "https://raw.githubusercontent.com/anelda/GenomicsHackyHour/gh-pages/img/technology-785742_1280.jpg"
-headlineSmall: "Welcome to HackyHour @ JCU"
+headlineSmall: "HackyHour @ JCU"
 headlineMain: "Sharing our knowledge to improve your science"
 
 # Setup Google Calendar
@@ -12,9 +12,9 @@ headlineMain: "Sharing our knowledge to improve your science"
 # 2. change 'USER' in the example urls below to the username of the google account you made for your calendar
 # 3. set calendar_on: True.
 
-calendar_on: false
-calendar_embed_url: "https://www.google.com/calendar/embed?src=genomicshack@gmail.com"
-calendar_ical_url: "https://www.google.com/calendar/ical/genomicshack@gmail.com/public/basic.ics"
+calendar_on: True
+calendar_embed_url: "https://www.google.com/calendar/embed?src=JCU.HackyHour@gmail.com"
+calendar_ical_url: "https://www.google.com/calendar/ical/JCU.HackyHour@gmail.com/public/basic.ics"
 
 
 #========================================
