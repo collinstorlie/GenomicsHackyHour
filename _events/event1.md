@@ -23,3 +23,7 @@ Only two HackyHour sessions remain for 2017!
   - *14:00 - 16:00*
 - *Friday November 25th*
   - *14:00 - 16:00*
+  
+This should be in events, but not in posts
+
+
