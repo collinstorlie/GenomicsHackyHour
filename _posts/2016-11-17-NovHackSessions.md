@@ -6,6 +6,12 @@ title: November HackyHour Sessions
 Only two HackyHour sessions remain for 2017!
 ============================================
 
+- ** Friday November 18th **
+- ** Friday November 25th **
+
+
+
+
 smaller heading
 ---------------
 
