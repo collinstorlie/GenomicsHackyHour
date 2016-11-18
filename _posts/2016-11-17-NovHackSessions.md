@@ -1,5 +1,6 @@
 ---
 layout: bloglayout
+type: sessions
 title: November HackyHour Sessions
 location: JCU Townsville, Education Central
 date: 2016-11-17
