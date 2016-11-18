@@ -1,5 +1,5 @@
 ---
-layout: bloglayout
+layout: sessionlayout
 type: session
 date: 2016-11-18
 startTime: '14:00'
