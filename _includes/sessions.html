@@ -21,7 +21,7 @@
                   {% if post.type == 'session' and (postyear > nowyear or postday >= nowday and postyear >= nowyear) %}
                     {% assign anyevents = 1 %}
                     <li>
-                      <a class='eventTitle' href="{{ site.github.url | replace:'http:','https:' }}/{{ post.url }}">{{ post.location }}, {{ post.date | date: "%-d %B %Y"}}, {{post.startTime | date:"%r"}} </a>
+                      <a class='eventTitle' href="{{ site.github.url | replace:'http:','https:' }}/{{ post.url }}">{{ post.date | date: "%-d %B %Y"}}, {{post.startTime | date:"%r"}} </a>
                        <div class='eventSub'>{{ post.text }}</div>
                     </li>
                   {% endif %}
