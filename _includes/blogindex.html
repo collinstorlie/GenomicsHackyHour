@@ -1,15 +1,20 @@
-<!-- Blog Posts Section -->
+	<!-- Blog Posts Section -->
     <section id="blogindex">
         <div class="container">
             <div class="row">
               <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Blog Posts</h2>
                 <h3 class="section-subheading text-muted">What Have We Been Up To?</h3>
+				<ul>
                   {% for post in site.posts %}
+				  {% if post.type == 'blogpost' %}
+				  <li>
                   <a href="{{ site.github.url | replace:'http:','https:' }}/{{ post.url }}">{{ post.title }}</a>
-                {% endfor %}
+				  </li>
+				  {% endif %}
+				  {% endfor %}
+				  </ul>
               </div>
             </div>
         </div>
     </section>
-
