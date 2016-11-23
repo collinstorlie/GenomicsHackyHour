@@ -191,8 +191,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,cursive;
     color: #{{ site.color.primary }};
+    font-style: italic;
 }
 
 .navbar-default .navbar-brand:hover,
