@@ -5,18 +5,18 @@
  font-size: 110px;
 }
 .eventupleftdiv { 
-   width:100px; 
-   height: 300px; 
+   width:33%; 
+   height: 100%; 
    background:red; float:left; 
 }
 .eventuprightdiv { 
-   width:300px; 
-   height:200px; 
+   width:67%; 
+   height:50%; 
    background:blue; 
    float:left
 }
 .eventbelowdiv { 
-   height:300px; 
-   width:400px; 
+   height:50%; 
+   width:67%; 
    background:green 
 }
