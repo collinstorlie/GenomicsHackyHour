@@ -17,15 +17,15 @@
     <div class="col-lg-6">
       <h1>DETAILS</h1>
       <dl>
-        <dt style="margin-top: 2em">WHERE?</dt>
+        <dt>WHERE?</dt>
           {% if page.subLocation %}
           <dd>{{ page.location }}, {{ page.subLocation }}</dd>
           {% else %}
           <dd>{{ page.location }}</dd>
           {% endif %}
-        <dt>WHEN?</dt>
+        <dt style="margin-top: 2em">WHEN?</dt>
         <dd>{{ page.startDate }}</dd>
-        <dt>COST?</dt>
+        <dt style="margin-top: 2em">COST?</dt>
         {% if page.eventCost %}
           <dd>{{ page.eventCost }}</dd>
           {% endif %}
