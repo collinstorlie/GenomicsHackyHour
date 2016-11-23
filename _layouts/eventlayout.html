@@ -19,7 +19,9 @@
       <dl>
         <dt>WHERE?</dt>
           {% if page.subLocation == true %}
-          <dd>{{ page.location }},{{ page.subLocation}}</dd>
+          <dd>{{ page.location }}, {{ page.subLocation }}</dd>
+          {% else %}
+          <dd>{{ page.location }}</dd>
           {% endif %}
         <dt>WHEN?</dt>
         <dd>{{ page.startDate }}</dd>
