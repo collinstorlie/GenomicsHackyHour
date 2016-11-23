@@ -8,15 +8,29 @@
     
     <h1 style="border: 100px solid black; border-width: 100px 0; background: black; color: white;">
         
-    {{ page.title }}
-    {{ page.subLocation }}  
-      
+    {{ page.title }}      
         
     </h1>
     
-    <div class="upleft">
+    <div class="eventupleftdiv">
     
     {{ content }}
+      
+    </div>
+    
+    <div class="eventuprightdiv">
+      
+    {{ page.location }}
+      
+    {{ page.subLocation }}
+      
+    </div>
+    
+    <div class="eventbelowdiv">
+      
+    {{ page.eventLink }}
+      
+    {{ page.signupLink }}
       
     </div>
 
