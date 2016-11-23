@@ -18,7 +18,7 @@
       <h1>DETAILS</h1>
       <dl>
         <dt>WHERE?</dt>
-          {% if page.subLocation == true %}
+          {% if page.subLocation == false %}
           <dd>{{ page.location }}, {{ page.subLocation }}</dd>
           {% else %}
           <dd>{{ page.location }}</dd>
