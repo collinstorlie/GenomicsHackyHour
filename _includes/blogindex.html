@@ -10,7 +10,7 @@
                  		 {% for post in site.posts %}
 				 {% if post.type == 'blogpost' %}
 				
-                  			<a href="{{ site.github.url | replace:'http:','https:' }}/{{ post.url }}">{{ post.title }}</a>
+                  			<a class='eventTitle' href="{{ site.github.url | replace:'http:','https:' }}/{{ post.url }}">{{ post.title }}</a>
 				 
 				  {% endif %}
 				  {% endfor %}
