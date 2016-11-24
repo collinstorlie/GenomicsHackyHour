@@ -69,6 +69,7 @@ ul.events{
 }
 
 .eventTitle{
+  text-align: center;
   font-size:150%;
 }
 
