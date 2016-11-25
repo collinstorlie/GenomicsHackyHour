@@ -31,6 +31,10 @@ p.20 {
     font-size: 20px;
 }
 
+p.larger {
+    font-size: 40px;
+}
+
 a,
 a:hover,
 a:focus,
