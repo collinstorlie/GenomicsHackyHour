@@ -54,10 +54,11 @@
                           {% assign postday = postday | plus: 0 %}
                           {% assign nowday = nowday | minus: 2 %}
                           {% if postyear < nowyear or postday < nowday and postyear == nowyear %}
-                           
+                           <div class="row">
+                            
                               <a class='eventTitle' href="{{ post.link }}">{{ post.title }} -- {{ post.location }} -- {{ post.date | date: "%-d %B %Y"}}</a>
                               <div class='eventSub'>{{ post.text }}</div>
-                            
+                        </div>
                           {% endif %}
                         {% endfor %}
 
