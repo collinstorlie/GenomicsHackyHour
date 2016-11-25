@@ -43,7 +43,7 @@
                       <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class='btn btn-xl'>Past Events</a>
                   </div>
                   <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                    
+                    <div class="panel-body">
                      
                         {% assign isEvent = 0 %}
                         {% for post in site.events reversed %}
@@ -54,16 +54,16 @@
                           {% assign postday = postday | plus: 0 %}
                           {% assign nowday = nowday | minus: 2 %}
                           {% if postyear < nowyear or postday < nowday and postyear == nowyear %}
-                           <div class="row">
+                           
                             
                               <a class='eventTitle' href="{{ post.link }}">{{ post.title }} -- {{ post.location }} -- {{ post.date | date: "%-d %B %Y"}}</a>
                               <div class='eventSub'>{{ post.text }}</div>
-                        </div>
+                       
                           {% endif %}
                         {% endfor %}
 
                      
-                    
+                      </div>
                   </div>
                 </div>
               </div>
