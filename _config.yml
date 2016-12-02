@@ -16,6 +16,8 @@ calendar_on: True
 calendar_embed_url: "https://www.google.com/calendar/embed?src=JCU.HackyHour@gmail.com"
 calendar_ical_url: "https://www.google.com/calendar/ical/JCU.HackyHour@gmail.com/public/basic.ics"
 
+github_url: https://github.com/jcu-eresearch-hackyhour/JCUHackyHour
+
 
 #========================================
 # No touching anything below this line :)
@@ -30,3 +32,4 @@ color:
 markdown: kramdown
 permalink: pretty
 future: True
+
