@@ -21,7 +21,7 @@
                   {% if post.type == 'event' and (postyear > nowyear or postday >= nowday and postyear >= nowyear) %}
                     {% assign anyevents = 1 %}
                    
-                      <a class='eventTitle' href="{{ site.github.url | replace:'http:','https:' }}/{{ post.url }}">{{ post.title }} -- {{ post.location }} -- {{ post.date | date: "%-d %B %Y"}}</a>
+                      <a class='eventTitle' href="https://jcu-eresearch-hackyhour.github.io/JCUHackyHour//{{ post.url }}">{{ post.title }} -- {{ post.location }} -- {{ post.date | date: "%-d %B %Y"}}</a>
                        <div class='eventSub'>{{ post.text }}</div>
                    
                   {% endif %}
