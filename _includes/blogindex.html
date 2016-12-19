@@ -10,7 +10,7 @@
                  		 {% for post in site.posts %}
 				 {% if post.type == 'blogpost' %}
 				
-                  			<a class='eventTitle' href="https://github.com/jcu-eresearch-hackyhour/JCUHackyHour/issues/{{ post.url }}">{{ post.title }}</a>
+                  			<a class='eventTitle' href="https://github.com/jcu-eresearch-hackyhour/JCUHackyHour/{{ post.url }}">{{ post.title }}</a>
 				 
 				  {% endif %}
 				  {% endfor %}
