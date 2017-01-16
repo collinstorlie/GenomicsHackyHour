@@ -2,3 +2,5 @@ client_secret.json
 _site
 .DS_Store
 /inclues/.DS_Store
+Gemfile
+Gemfile.lock
