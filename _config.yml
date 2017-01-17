@@ -2,7 +2,8 @@
 title: HackyHour @ JCU
 description: "Providing digital solutions to JCU research staff & students"
 
-titleBackground: "https://raw.githubusercontent.com/anelda/GenomicsHackyHour/gh-pages/img/technology-785742_1280.jpg"
+#titleBackground: "https://raw.githubusercontent.com/anelda/GenomicsHackyHour/gh-pages/img/technology-785742_1280.jpg"
+titleBackground: "https://raw.githubusercontent.com/jcu-eresearch-hackyhour/JCUHackyHour/gh-pages/img/keyboard.jpg"
 headlineSmall: "HackyHour @ JCU" # 
 headlineMain: "Sharing our digital skills to improve your science" # Need a better tag line
 
