@@ -24,9 +24,9 @@ github_url: https://github.com/jcu-eresearch-hackyhour/JCUHackyHour
 #========================================
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 248F24
-  secondary: CF0000
-  secondary-dark: 333
+  primary: 0066b3
+  secondary: 2e3192
+  secondary-dark: 222570
 
 # Build settings
 markdown: kramdown
