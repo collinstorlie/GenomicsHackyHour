@@ -52,6 +52,7 @@ a:focus,
 a:active,
 a.active {
     color: #{{ site.color.secondary }};
+    
 }
 
 h1,
@@ -677,6 +678,11 @@ section h3.section-subheading {
 
 aside.clients img {
     margin: 50px auto;
+}
+
+section#sessions  {
+	background-color: #95a5a6;
+	background-image: url(img/map-image.png);
 }
 
 section#contact {
