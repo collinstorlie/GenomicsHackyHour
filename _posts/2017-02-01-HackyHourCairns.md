@@ -1,7 +1,7 @@
 ---
 layout: bloglayout
 type: blogpost
-date: 2016-11-25
+date: 2017-02-01
 title: HackyHour @ JCU Cairns
 contentposter: Collin Storlie
 ---
