@@ -9,7 +9,7 @@
 			</div>
 			<div class="col-xs-12 col-md-6 text-center">
 			  <!--upcoming events -->
-			  
+
 				{% assign anyevents = 0 %}
 				{% for post in site.posts reversed %}
 					{% capture nowyear %}{{'now' | date: '%Y'}}{% endcapture %}
@@ -21,7 +21,7 @@
 					{% if post.type == 'session' and (postyear > nowyear or postday >= nowday and postyear >= nowyear) %}
 						{% assign anyevents = 1 %}
 
-						<a class='eventTitle' href="https://jcu-eresearch-hackyhour.github.io/JCUHackyHour//{{ post.url }}">{{ post.date | date: "%-d %B %Y"}}, {{post.startTime | date:"%R"}} </a>
+						<a class='eventTitle' href="https://jcu-eresearch-hackyhour.github.io/JCUHackyHour/{{ post.url }}">{{ post.date | date: "%-d %B %Y"}}, {{post.startTime | date:"%R"}} </a>
 						<div class='eventSub'>{{ post.text }}</div>
 					{% endif %}
 				{% endfor %}
@@ -34,5 +34,5 @@
 
 		</div>
 	</section>
-			
-			  
+
+

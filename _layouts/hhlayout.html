@@ -2,15 +2,22 @@
 <html>
 {% include head.html %}
 
+
   <body id="page-top" class="index">
 
     {% include navbar.html %}
-    
-    <h1 style="border: 100px solid black; border-width: 100px 0; background: black; color: white;">
-        BLOG
+
+    <h1 style="border: 100px solid black; text-align: center; border-width: 100px 0; background: black; color: white;">
+        Hacky Hour Blog
     </h1>
-    
-    {{ content }}
+    <div class="container">
+      <div class="row">
+                <div class="col-lg-12 text-center">
+                     {{ content }}
+                </div>
+      </div>
+    <div>
+
 
     <hr>
     <p>copyright and love, JCU eR</p>

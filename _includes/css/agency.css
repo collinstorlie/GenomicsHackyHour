@@ -44,7 +44,9 @@ a.active {
 }
 
 a {
+   text-decoration: underline;
     color: #{{ site.color.secondary-dark }};
+
 }
 
 a:hover,
@@ -52,7 +54,7 @@ a:focus,
 a:active,
 a.active {
     color: #{{ site.color.secondary }};
-    
+
 }
 
 h1,
@@ -204,7 +206,7 @@ fieldset[disabled] .btn-xl.active {
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,cursive;
     font-style: italic;
     color: #{{ site.color.primary }};
-    
+
 }
 
 .navbar-default .navbar-brand:hover,
