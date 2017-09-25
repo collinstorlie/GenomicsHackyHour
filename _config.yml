@@ -1,36 +1,47 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-title: HackyHour @ JCU
-description: "Providing digital solutions to JCU research staff & students"
-
-#titleBackground: "https://raw.githubusercontent.com/anelda/GenomicsHackyHour/gh-pages/img/technology-785742_1280.jpg"
-titleBackground: "https://raw.githubusercontent.com/jcu-eresearch-hackyhour/JCUHackyHour/gh-pages/img/keyboard.jpg"
-headlineSmall: "HackyHour @ JCU" # 
-headlineMain: "Sharing our digital skills to improve your science" # Need a better tag line
-
-# Setup Google Calendar
-# Usage:
-# 1. create a new google account; set the calendar to 'public'
-# 2. change 'USER' in the example urls below to the username of the google account you made for your calendar
-# 3. set calendar_on: True.
-
-calendar_on: True
-calendar_embed_url: "https://www.google.com/calendar/embed?src=JCU.HackyHour@gmail.com"
-calendar_ical_url: "https://www.google.com/calendar/ical/JCU.HackyHour@gmail.com/public/basic.ics"
-
-github_url: https://github.com/jcu-eresearch-hackyhour/JCUHackyHour
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Your awesome title
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
 
 
-#========================================
-# No touching anything below this line :)
-#========================================
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: 0066b3
-  secondary: 2e3192
-  secondary-dark: 222570
+permalink: /:year/:month/:day/:title.html
+
 
 # Build settings
 markdown: kramdown
-permalink: pretty
-future: True
+theme: minima
+plugins:
+  - jekyll-feed
 
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
