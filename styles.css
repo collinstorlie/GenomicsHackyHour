@@ -1,0 +1,131 @@
+html {
+font-family: 'Nunito Sans', sans-serif;
+/*font-family: lato, sans-serif;*/
+font-size: 14px;
+font-size: calc(14px + 1.125vw);
+line-height: 1.5;
+background: white;
+padding: 0;
+margin: 0;
+}
+
+body {
+max-width: 35rem;
+margin: 0 auto;
+padding: 1rem 0.5rem 5rem;
+}
+
+header {
+	margin: 0.5rem 0;
+}
+
+header h1 {
+	border: 0 solid black;
+	border-width: 0.25em 0;
+	font-weight: 900;
+	font-size: 250%;
+	font-size: calc(225% + 3vw);
+	line-height: 1.2;
+	padding: 0.1em 0;
+	margin: 0;
+	text-align: center;
+	letter-spacing: 0.01em;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+footer {
+	border-top: 0.75em solid black;
+}
+
+section.whereandwhen {
+	text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+color: #357;
+margin: 0 0 0 -0.1em;
+padding: 1.5em 0 0.5rem;
+}
+
+h1 { font-size: 2.369rem; opacity: 1.00; font-weight: 400; }
+/* not using 3.157rem */
+h2 { font-size: 2.369rem; opacity: 0.85; font-weight: 200; }
+h3 { font-size: 1.778rem; opacity: 0.90; font-weight: 400; }
+h4 { font-size: 1.333rem; opacity: 0.95; font-weight: 600; }
+h5 { font-size: 1.000rem; opacity: 1.00; font-weight: 800; }
+h6 { font-size: 1.000rem; opacity: 1.00; font-style: italic; }
+
+h2 { 
+border-bottom: 1px solid;
+padding: 3rem 0 0;
+margin-bottom: 1rem;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+color: inherit;
+border-bottom: 2px dotted;
+text-decoration: inherit;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+border-bottom: 2px solid;
+}
+
+p, li {
+margin: 0;
+padding: 0.33em 0;
+}
+
+li {
+padding-left: 1em;
+text-indent: -1em;
+}
+
+code {
+font-size: smaller;
+}
+
+p > code {
+background: #f3f9ff;
+padding: 0.3em;
+border-radius: 0.3em;
+}
+
+pre {
+padding: 0.5em;
+background: #f3f9ff;
+border-left: 1px solid #eef0ff;
+max-width: 100%;
+overflow-x: auto;
+/*box-shadow: -50rem 0 #f3f9ff, 50rem 0 #f3f9ff;*/
+}
+
+pre.small { font-size: 75%; color: rgba(0,0,0, 0.8) }
+
+/* override some Prism sourcecode highlight styles */
+pre[class*="language-"] {
+line-height: 1.2;
+overflow-x: auto;
+background: #f3f9ff;
+}
+:not(pre) > code[class*="language-"] {
+background: #f3f9ff;
+padding: 0.3em;
+border-radius: 0.3em;
+}
+
+code[class*="language-"] {
+line-height: 1.2;
+}
+
+pre p {
+padding: 0;
+}
+
+
+/* ToC management */
+#tocHeading { cursor: pointer; }
+#tocContent { overflow: hidden; font-size: smaller; }
+.open   #tocHeading:after { content: ' \25be' }
+.closed #tocHeading:after { content: ' \25b8' }
+.open   #tocContent { height: auto; }
+.closed #tocContent { height: 0; }
