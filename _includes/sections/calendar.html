@@ -1,0 +1,31 @@
+<section class="calendar">
+
+	<ul class="calendar">
+	{% for event in site.data.calendar %}
+		<li class="event">
+			<time datetime="{{ event.date }}">{{ event.date }}</time>
+			<span>{{ event.description }}</span>
+		</li>
+	{% endfor %}
+	</ul>
+	<script>
+		var monthNames = ["January", "February", "March",
+						"April", "May", "June", "July",
+    					"August", "September", "October",
+    					"November", "December"]
+		var events = document.querySelectorAll('.calendar .event')
+		console.log(events)
+		for (var e = 0; e < events.length; e++) {
+			var event = events[e]
+			var dateElement = event.querySelector('time')
+			var date = new Date(dateElement.getAttribute('datetime'))
+			if (date < new Date()) {
+				event.remove()
+				continue
+			}
+			var niceDate = '' + date.getDate() + ' ' + monthNames[date.getMonth()] + ' ' + date.getFullYear()
+			dateElement.innerHTML = niceDate
+		}
+	</script>
+
+</section>

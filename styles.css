@@ -21,7 +21,7 @@ header {
 
 header h1 {
 	border: 0 solid black;
-	border-width: 0.25em 0;
+	border-width: 0.66rem 0;
 	font-weight: 900;
 	font-size: 250%;
 	font-size: calc(225% + 3vw);
@@ -34,12 +34,36 @@ header h1 {
 }
 
 footer {
-	border-top: 0.75em solid black;
+	margin: 1rem 0;
+	border-top: 0.66rem solid black;
 }
 
 section.whereandwhen {
 	text-align: center;
 }
+
+section.calendar {
+	background-color: #f8f8f8;
+	box-shadow: inset 1.5rem 0 2.5rem -1rem #999;
+	overflow-y: scroll;
+}
+
+ul.calendar {
+	padding: 1rem;
+	white-space: nowrap;
+}
+ul.calendar li.event {
+	display: inline-block;
+	vertical-align: bottom;
+	border: red;
+	padding: 0.5rem;
+	margin: 0.5rem;
+	background-color: white;
+}
+ul.calendar li.event time, ul.calendar li.event span {
+	display: block;
+}
+
 
 h2, h3, h4, h5, h6 {
 color: #357;
