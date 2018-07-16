@@ -1,6 +1,6 @@
 <section class="calendar">
 	<button class="left">⬅</button>
-	<div class="calendarscroller">
+	<div class="calendarscroller clearfix">
 		<ul class="calendar">
 		{% for event in site.data.calendar %}
 			<li class="event">
@@ -19,7 +19,6 @@
     					"August", "September", "October",
     					"November", "December"]
 		var events = document.querySelectorAll('.calendar .event')
-		console.log(events)
 		for (var e = 0; e < events.length; e++) {
 			var event = events[e]
 			var dateElement = event.querySelector('time')
@@ -43,11 +42,37 @@
 			dateElement.innerHTML = niceDate
 		}
 
+		function showButtons() {
+			var elem = document.querySelector('section.calendar .calendarscroller')
+			var lbtn = document.querySelector('.calendar button.left')
+			var rbtn = document.querySelector('.calendar button.right')
+
+			console.log({  clientWidth: elem.clientWidth,
+							 scrollWidth: elem.scrollWidth,
+							 scrollLeft: elem.scrollLeft     })
+
+			lbtn.style.display = 'block'
+			rbtn.style.display = 'block'
+			if (elem.clientWidth < elem.scrollWidth) {
+				if (elem.scrollLeft < 1) {
+					rbtn.style.display = 'none'
+				}
+				if (elem.scrollLeft + elem.clientWidth >= elem.scrollWidth ) {
+					lbtn.style.display = 'none'
+				}
+			} else {
+				lbtn.style.display = 'none'
+				rbtn.style.display = 'none'
+			}
+			return true
+		}
+
+		document.querySelector('section.calendar .calendarscroller').onscroll = showButtons
 
 		document.querySelector('.calendar button.left').onclick = function(e) {
 			var elem = document.querySelector('section.calendar .calendarscroller')
 			elem.scrollLeft = elem.scrollLeft + (elem.clientWidth/4)
-			console.log('left')
+			setTimeout(showButtons, 0)
 			e.preventDefault()
 			return false
 		}
@@ -55,11 +80,12 @@
 		document.querySelector('.calendar button.right').onclick = function(e) {
 			var elem = document.querySelector('section.calendar .calendarscroller')
 			elem.scrollLeft = elem.scrollLeft - (elem.clientWidth/4)
-			console.log('left')
+			setTimeout(showButtons, 0)
 			e.preventDefault()
 			return false
 		}
 
+		setTimeout(showButtons, 100)
 	</script>
 
 </section>

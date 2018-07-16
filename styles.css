@@ -22,6 +22,7 @@ font-family: 'Nunito Sans', sans-serif;
 /*font-family: lato, sans-serif;*/
 font-size: 14px;
 font-size: calc(14px + 1.125vw);
+font-size: calc(10px + 1.1vw);
 line-height: 1.5;
 background: white;
 background: var(--lightest);
@@ -31,7 +32,7 @@ margin: 0;
 }
 
 body {
-max-width: 35rem;
+max-width: 40rem;
 margin: 0 auto;
 padding: 1rem 0.5rem 5rem;
 }
