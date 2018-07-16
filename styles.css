@@ -1,3 +1,22 @@
+:root {
+	--lightest: #fff;
+	--light: #eee;
+	--lightish: #ccc;
+	--mid: #999;
+	--darkish: #666;
+	--dark: #222;
+	--darkest: #000;
+
+	--link-darkish: #35f;
+	--link-dark: #019;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 html {
 font-family: 'Nunito Sans', sans-serif;
 /*font-family: lato, sans-serif;*/
@@ -5,6 +24,8 @@ font-size: 14px;
 font-size: calc(14px + 1.125vw);
 line-height: 1.5;
 background: white;
+background: var(--lightest);
+color: var(--dark);
 padding: 0;
 margin: 0;
 }
@@ -15,27 +36,62 @@ margin: 0 auto;
 padding: 1rem 0.5rem 5rem;
 }
 
+a {
+	text-decoration: none;
+	color: var(--link-dark);
+}
+
+a:hover {
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	color: var(--link-darkish);
+}
+
 header {
+	border: 0 solid #333;
+	border: 0 solid var(--dark);
+}
+header.big {
+	border-width: 0.66rem 0;
 	margin: 0.5rem 0;
+}
+header.small {
+	border-width: 0 0 0.5rem;
+	margin: -1rem 0 0.5rem;
 }
 
 header h1 {
-	border: 0 solid black;
-	border-width: 0.66rem 0;
 	font-weight: 900;
-	font-size: 250%;
-	font-size: calc(225% + 3vw);
 	line-height: 1.2;
 	padding: 0.1em 0;
-	margin: 0;
-	text-align: center;
 	letter-spacing: 0.01em;
 	font-family: 'Nunito Sans', sans-serif;
+	margin: 0.5rem 0;
+}
+
+header.big h1 {
+	text-align: center;
+	font-size: 250%;
+	font-size: calc(225% + 3vw);
+}
+
+header.small h1 {
+	text-align: left;
+	font-size: 150%;
+	font-size: calc(125% + 3vw);
+	padding-top: 0;
+}
+header.small p {
+	font-size: 0.8rem;
+	float: right;
+	text-align: right;
+	line-height: 1.2;
 }
 
 footer {
-	margin: 1rem 0;
-	border-top: 0.66rem solid black;
+	margin: 3rem 0 1rem;
+	border-top: 0.5rem solid #333;
+	border-top: 0.5rem solid var(--dark);
 }
 
 section.whereandwhen {
@@ -43,25 +99,91 @@ section.whereandwhen {
 }
 
 section.calendar {
+	position: relative;
 	background-color: #f8f8f8;
-	box-shadow: inset 1.5rem 0 2.5rem -1rem #999;
+	background-color: var(--light);
+	box-shadow:
+		inset 7rem 0 2.5rem -6rem var(--mid),
+		inset -7rem 0 2.5rem -6rem var(--mid);
+	padding: 0;
+	margin: 1rem 0;
+	border: 1px solid #333;
+	border: 1px solid var(--dark);
+	border-width: 0 0.5rem;
+	border-radius: 1.5rem/1rem;
+}
+
+section.calendar .calendarscroller {
 	overflow-y: scroll;
 }
 
+section.calendar button {
+	position: absolute;
+	z-index: 1;
+	font-size: 1rem;
+	height: 1.5em;
+	line-height: 1;
+	text-align: center;
+	font-weight: 900;
+	width: 1.5em;
+	border-radius: 0.8em;
+	padding: 0;
+	margin: 0;
+	border: none;
+	color: #ccc;
+	color: var(--light);
+	background-color: #333;
+	background-color: var(--dark);
+	top: 50%;
+	transform: translateY(-50%);
+}
+section.calendar button.left { left: 1em; }
+section.calendar button.right { right: 1em; }
+
 ul.calendar {
-	padding: 1rem;
+	padding: 1rem 3rem;
+	margin: 0;
 	white-space: nowrap;
+	font-size: 0.8rem;
 }
 ul.calendar li.event {
 	display: inline-block;
+	position: relative;
 	vertical-align: bottom;
-	border: red;
+	text-indent: 0;
+	text-align: center;
 	padding: 0.5rem;
-	margin: 0.5rem;
+	margin: 0 0.5rem;
 	background-color: white;
+	background-color: var(--lightest);
+	max-width: 9em;
+	white-space: normal;
 }
-ul.calendar li.event time, ul.calendar li.event span {
+ul.calendar li.event.today:after,
+ul.calendar li.event.tomorrow:after {
+	position: absolute;
+	font-size: 66%;
+	line-height: 1.4;
+	text-align: center;
+	top: -0.7em;
+	left: 0; right: 0;
+	margin: 0 auto;
+	width: min-content;
+	padding: 0 0.5em;
+	background-color: #222;
+	background-color: var(--dark);
+	color: #eee;
+	color: var(--light);
+	border-radius: 0.7em;
+}
+ul.calendar li.event.today:after { content: 'today!'; }
+ul.calendar li.event.tomorrow:after { content: 'tomorrow'; background: var(--darkish); }
+
+ul.calendar li.event time,
+ul.calendar li.event span {
 	display: block;
+	padding-top: 0.33em;
+	line-height: 1.3;
 }
 
 
@@ -79,7 +201,7 @@ h4 { font-size: 1.333rem; opacity: 0.95; font-weight: 600; }
 h5 { font-size: 1.000rem; opacity: 1.00; font-weight: 800; }
 h6 { font-size: 1.000rem; opacity: 1.00; font-style: italic; }
 
-h2 { 
+h2 {
 border-bottom: 1px solid;
 padding: 3rem 0 0;
 margin-bottom: 1rem;
